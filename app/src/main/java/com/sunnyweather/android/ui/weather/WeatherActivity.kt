@@ -105,7 +105,7 @@ class WeatherActivity : AppCompatActivity() {
         // 填充forecast.xml布局中的数据
         forecastLayout.removeAllViews()
         val days = daily.skycon.size
-        for (i in 2 until days) {
+        for (i in 0 until days) {
             val skycon = daily.skycon[i]
             val temperature = daily.temperature[i]
             val view = LayoutInflater.from(this).inflate(R.layout.forecast_item,
